@@ -1,0 +1,4 @@
+<app-panier-card *ngFor="let produit of listProduit" 
+[produit]="produit"
+(deleteEvent)="wantToDelete($event)"
+></app-panier-card>

@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="wantToCreate()">Nouveau produit</button>
+
+<app-produit-card 
+*ngFor="let produit of listProduit" 
+(editEvent)="wantToEdit($event)"
+(addPanierEvent)="wantToAddPanier($event)"
+(detailEvent)="wantToRead($event)"
+[produit]="produit"></app-produit-card>

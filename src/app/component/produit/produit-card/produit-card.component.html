@@ -1,0 +1,19 @@
+<h3>
+  Libelle Produit : {{produit.libelle}}
+</h3>
+
+<p>Prix : {{produit.prix}}€</p>
+
+<p>Quantité :</p>
+<input type="number" [formControl]="quantiteNameControl" [value]="1"/>
+<button (click)="wantToAddPanier()">Ajout Panier</button>
+
+<br>
+
+<button (click)="wantDetail()">Voir détails</button>
+
+<br>
+
+<button (click)="wantToEdit()">Edit Produit</button>
+
+<hr>
